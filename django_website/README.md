@@ -1,5 +1,6 @@
 # Django project using Python
-This is a example Python Django project for my personal understanding of how to create a Django blog application. 
+This is a example Python Django project for my personal understanding of how to create a Django blog application.
+
 Original content creator is: 
 https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=1
 
