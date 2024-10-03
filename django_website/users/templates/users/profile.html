@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <!-- <h1>Hello {% if user.first_name == '' %}{{user.username}}{% else %}{{user.first_name}}{% endif %}!</h1> -->
+
+    <div class="content-section">
+        <div class="d-flex mt-2">
+            <div class="flex-shrink-0 media">
+                <img class="rounded account-img" src="{{ user.profile.image.url }}">
+            </div>
+            <div class="flex-grow-2 mt-5">
+                <h2 class="account-heading">{% if user.first_name == '' %}{{user.username}}{% else %}{{user.first_name}} {{user.last_name}}{% endif %}</h2>
+                <p class="text-secondary">{{ user.email }}</p>
+            </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <H2><ledgend class="border-bottom mb-4">Profile Information</ledgend></H2>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
