@@ -18,3 +18,8 @@ pip install django-crispy-forms
 ```bash
 pip install crispy-bootstrap5
 ```
+## Running application
+To run the application run the following command in your project location where manage.py is located.
+```bash
+python manage.py runserver
+```
