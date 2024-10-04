@@ -16,16 +16,20 @@ import pathlib
 divider = '---------------------------------------------------------------'
 
 def rename(bulk, src, dest):
-    print(str(bulk) +' : '+ src +' : '+dest)
     if bulk:
         i=0
-        for file in os.listdir(src):
-            p_file = ''.join([src,file])
-            new_f_name = '.'.join([dest+'_'+str(i), file.split('.')[1]])
-            new_f = ''.join([src,new_f_name])
-            os.rename(p_file, new_f)
-            print(divider)
-            print(file +" renamed to: " + new_f_name)
+        print(divider)
+        for file in os.listdir(src):            
+            try :
+                p_file = ''.join([src,file])
+                # src = pathlib.Path(src)
+                p_file = os.path.join(src, file)
+                new_f_name = '.'.join([dest+'_'+str(i), file.split('.')[1]])
+                new_f = ''.join([src,new_f_name])
+                os.rename(p_file, new_f)
+                print(file +" renamed to: " + new_f_name)
+            except:
+                print(f'{file} is not a file with a suffix.')
             i+=1
     else:
         src = pathlib.Path(src)
