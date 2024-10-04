@@ -8,17 +8,11 @@ This command is handy if you require to update files in bulk, minor updates can 
 E.g. if you needed to update the files to have dates within the filename
 ```bash
 python rename_files.py b ./test_files/ new_file_name
-```
-or
-```bash
+# or
 python rename_files.py bulk ./test_files/ new_file_name
-```
-or
-```bash
+# or
 python rename_files.py B ./test_files/ new_file_name
-```
-or
-```bash
+# or
 python rename_files.py BULK ./test_files/ new_file_name
 ```
 ## Rename an individual file via command line
