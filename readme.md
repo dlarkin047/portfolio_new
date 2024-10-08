@@ -14,3 +14,4 @@ Created a script to rename files. Can be used to bulk rename files within a dire
 ### Software Testing / Quality Assurance Testing Projects
 - [Test case Documention](quality_assurance/documentation/)
 - [Playwright Tests](quality_assurance/Playwright/)
+    - [Login/Logout](quality_assurance/Playwright/tests/Login_logout_example_swag_labs.spec.js)
