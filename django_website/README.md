@@ -24,8 +24,29 @@ To run the application run the following command in your project location where 
 python manage.py runserver
 ```
 
+## Other Django commands
+Create a new app within the project
+```bash
+python manage.py startapp blog
+```
+Implements changes made to the application. E.g. new tables created.
+```bash
+python manage.py makemigrations
+```
+Created a superuser so that they can login to the Admin page.
+```bash
+python manage.py createSuperUser
+```
+
 ## Passwords
 | Username | Password |
 |----------|----------|
 | dlarkin | password |
 | TestUser | TestPassword |
+
+## Creating a Python Virtual Environment
+```bash
+pip3 install virtualenv
+virtualenv env_django
+.\env_django\bin\activate
+```
