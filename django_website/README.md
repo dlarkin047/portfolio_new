@@ -23,3 +23,9 @@ To run the application run the following command in your project location where 
 ```bash
 python manage.py runserver
 ```
+
+## Passwords
+| Username | Password |
+|----------|----------|
+| dlarkin | password |
+| TestUser | TestPassword |
