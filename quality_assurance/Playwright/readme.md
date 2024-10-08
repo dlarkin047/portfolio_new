@@ -1,7 +1,5 @@
 # Playwright
-These test are based on the test cases I wrote in: 
-<a href="quality_assurance/documentation/">Example_login_logout_testcases.xlsx </a>
-quality_assurance/documentation/Example_login_logout_testcases.xlsx
+These test are based on the test cases I wrote in: [Example_login_logout_testcases.xlsx](https://github.com/dlarkin047/progamming_portfolio/tree/master/quality_assurance/documentation)
 
 ### Install Playwright
 ```bash
