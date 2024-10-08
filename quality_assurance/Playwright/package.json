@@ -1,0 +1,20 @@
+{
+  "name": "Playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "swag_labs.spec.js",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.64.0",
+    "playwright": "^1.47.2",
+    "tiktoken": "^1.0.16"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.6.1"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

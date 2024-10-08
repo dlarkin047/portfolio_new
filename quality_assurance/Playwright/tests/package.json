@@ -1,0 +1,11 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "Login_logout_example_swag_labs.spec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
